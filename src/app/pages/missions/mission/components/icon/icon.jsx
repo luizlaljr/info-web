@@ -7,7 +7,9 @@ import './icon.css'
 function Icon({ icon }) {
   return (
     <div className="icon">
-      {icon.number}
+      <div className="number">
+        <span>{icon.number}</span>
+      </div>
       <i
         className={`fas fa-${handleKind(icon.kind)}`}
         style={{ color: `${icon.color}` }}
