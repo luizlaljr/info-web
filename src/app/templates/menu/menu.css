@@ -1,0 +1,13 @@
+aside {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+nav {
+  display: block;
+  width: 80%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

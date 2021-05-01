@@ -1,0 +1,20 @@
+.nav-item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  border-radius: 15px 0 0 15px;
+  font-size: 18px;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-item:hover {
+  background: linear-gradient(90deg, rgba(71,130,251,1) 10%, rgba(0,230,253,1) 100%);
+}
+
+.nav-item span {
+  margin-left: 10px;
+  margin-right: 20px;
+}

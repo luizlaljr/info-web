@@ -1,0 +1,29 @@
+.table {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 100%;
+  border-top: 3px solid rgb(93, 113, 168);
+  border-bottom: 3px solid rgb(93, 113, 168);
+}
+
+.table .table-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 70px;
+  align-items: center;
+  height: 100%;
+  border-bottom: 1px solid rgb(93, 113, 168);
+}
+
+.table .table-row .table-column {
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+  text-shadow: 2px 2px 4px #333;
+}
+
+.table .table-row .title-column {
+  font-weight: bold;
+  font-style: italic;
+}

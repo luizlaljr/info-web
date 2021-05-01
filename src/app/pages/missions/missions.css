@@ -1,0 +1,10 @@
+.missions {
+  background-color: #22466A;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}

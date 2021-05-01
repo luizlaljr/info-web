@@ -1,0 +1,15 @@
+.name {
+  font-size: 24px;
+  font-weight: 900;
+  font-style: italic;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(149, 216, 255);
+  text-shadow: 1px 1px 2px #bbb;
+  margin-top: 10px;
+}
+
+.operationality {
+  padding-top: 6px;
+  font-size: 20px;
+  font-weight: 900;
+}
