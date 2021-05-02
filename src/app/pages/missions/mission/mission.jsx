@@ -14,11 +14,10 @@ import './mission.css'
 
 function Mission({ mission }) {
   const color = handleColor(mission.link)
-
   return (
     <>
       <div className="mission">
-        <Title title={mission.link} />
+        <Title link={mission.link} />
         <Icon
           icon={{
             kind: mission.kind,

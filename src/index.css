@@ -1,13 +1,13 @@
 :root {
-  --bg-dark: #12365A;
+  --bg: #12365A;
+  --bg-dark: #091C2F;
+  --bg-ligth: #22466A;
   --header-height:120px;
   --aside-width: 225px;
   --content-height: calc(100vh - 110px);
   --shadow: 0 2px 23px 0 rgba(0, 0, 0, 0.1),
   0 2px 49px 0 rgba(0, 0, 0, 0.6);
-  --font-standart: 'Roboto', sans-serif;
-  --font-bold: 'Open Sans Condensed', sans-serif;
-  --font-thin: 'Roboto Condensed', sans-serif; 
+  --font: 'Roboto', sans-serif;
 }
 
 * {
@@ -17,18 +17,19 @@
 }
 
 body {
-  background-color: var(--bg-dark);
+  background-color: var(--bg);
 }
 
 body, input, button {
-  font-family: var(--font-standart),
+  font-family: var(--font),
     sans-serif;
   color: white;
   outline: none;
+  font-size: 16px;
 }
 
 button {
-  font-family: var(--font-bold),
+  font-family: var(--font),
 }
 
 body {

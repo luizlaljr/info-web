@@ -12,12 +12,12 @@ function Card({ title, gradient, colorsGradient, amount, income }) {
     >
       <div className="card-title">{title}</div>
       <div className="card-content">
-        <div className="amount">
-          <span>Qtd: </span>
+        <div className="card-amount">
+          Qtd:
           {amount}
         </div>
-        <div className="income">
-          <span>Valor: </span>
+        <div className="card-income">
+          Valor:
           {income}
         </div>
       </div>

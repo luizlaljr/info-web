@@ -1,5 +1,5 @@
 .missions {
-  background-color: #22466A;
+  background-color: var(--bg-ligth);
   width: 100%;
   height: var(--content-height);
   display: flex;

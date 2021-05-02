@@ -55,12 +55,16 @@
 }
 
 .login-container form button {
+  height: 43px;
   padding: 10px;
   border: none;
-  height: 43px;
   border-radius: 30px;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: 700;
   letter-spacing: 1.1px;
   background: linear-gradient(90deg, rgba(71,130,251,1) 10%, rgba(0,230,253,1) 100%);
+}
+
+.login-container form .input span {
+  color: rgb(144, 176, 212);
 }
