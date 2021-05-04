@@ -48,6 +48,42 @@ const handleLink = (link) => {
   return condition
 }
 
+const handleOperationality = (activity, opertionality) => {
+  let name = ''
+  switch (activity) {
+    case 'P':
+      name = 'Piloto '
+      break
+    case 'M':
+      name = 'Mecânico '
+      break
+    case 'C':
+      name = 'Comissário '
+      break
+    default:
+      name = 'Médico '
+      break
+  }
+  switch (opertionality) {
+    case 'PB':
+      name += 'Básico'
+      break
+    case 'PO':
+      name += 'Operacional'
+      break
+    case 'OP':
+      name += 'Operacional'
+      break
+    case 'IN':
+      name = 'Instrutor'
+      break
+    default:
+      name += 'Aluno'
+      break
+  }
+  return name
+}
+
 const handleGradient = (link) => {
   let gradient = {}
   switch (link) {
@@ -116,6 +152,7 @@ export {
   handleDocument,
   handleDate,
   handleLink,
+  handleOperationality,
   handleGradient,
   handleIncome,
   handleKind,
