@@ -23,11 +23,15 @@ const AuthProvider = ({ children }) => {
   }
 
   const fetchReportsAuth = async (authUser) => {
-    const { id, token } = authUser
-    api.defaults.headers.Authorization = `Bearer ${token}`
-    const { data } = await api.get(`/users/${id}/reports`)
-    setReportsUser(data)
-    return data
+    try {
+      const { id, token } = authUser
+      api.defaults.headers.Authorization = `Bearer ${token}`
+      const { data } = await api.get(`/users/${id}/reports`)
+      setReportsUser(data)
+      return data
+    } catch (error) {
+      return null
+    }
   }
 
   const signOut = () => {

@@ -14,12 +14,12 @@ function Menu() {
   }
 
   return (
-    <aside>
+    <aside className="menu-area">
       <nav>
-        <NavItem path="/" icon="user">
+        <NavItem active="active" path="/" icon="user">
           Status
         </NavItem>
-        <NavItem path="/missions" icon="plane">
+        <NavItem active="" path="/missions" icon="plane">
           Missões
         </NavItem>
         <NavItem onClick={handleLogout} path="/" icon="sign-out-alt">

@@ -1,10 +1,11 @@
 .table {
   display: flex;
   flex-direction: column;
-  height: 80%;
+  height: 90%;
   width: 100%;
   border-top: 3px solid rgb(93, 113, 168);
   border-bottom: 3px solid rgb(93, 113, 168);
+  flex-grow: 1;
 }
 
 .table .table-row {
@@ -13,17 +14,47 @@
   padding: 10px 70px;
   align-items: center;
   height: 100%;
+  font-size: 1.45rem;
   border-bottom: 1px solid rgb(93, 113, 168);
 }
 
 .table .table-row .table-column {
   display: flex;
   justify-content: center;
-  font-size: 1.45rem;
   text-shadow: 2px 2px 4px #333;
 }
 
 .table .table-row .title-column {
   font-weight: 700;
   font-style: italic;
+}
+
+@media (max-width: 450px){
+  .table .table-row {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-height: 900px) {
+  .table .table-row {
+    padding: 7% 1%;
+  }
+}
+
+@media (max-height: 736px) {
+  .table .table-row {
+    padding: 3.5% 1%;
+  }
+}
+
+@media (max-height: 667px) {
+  .table .table-row {
+    padding: 2.8% 1%;
+  }
+}
+
+@media (max-height: 568px) {
+  .table .table-row {
+    padding: 1% 1%;
+  }
 }

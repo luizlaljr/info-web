@@ -1,7 +1,6 @@
 .name {
   font-size: 1.5rem;
   font-weight: 900;
-  font-style: italic;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: rgb(149, 216, 255);
   text-shadow: 1px 1px 2px #bbb;
@@ -12,4 +11,6 @@
   padding-top: 6px;
   font-size: 1.4rem;
   font-weight: 700;
+  font-style: italic;
+  opacity: 0.8;
 }

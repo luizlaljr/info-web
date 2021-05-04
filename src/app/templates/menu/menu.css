@@ -1,4 +1,5 @@
-aside {
+.menu-area {
+  grid-area: menu;
   height: 100%;
   width: 100%;
   position: relative;
@@ -10,4 +11,14 @@ nav {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+@media (max-width: 450px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
 }

@@ -8,3 +8,9 @@
   align-items: center;
   padding: 10px;
 }
+
+@media (max-width: 450px) {
+  .describe {
+    background: var(--bg-ligth);
+  }
+}

@@ -10,22 +10,52 @@
     'logo header'
     'menu content';
 }
-.logo {
-  grid-area: logo;
-}
 
-.menu-area {
-  grid-area: menu;
-}
-
-.header {
-  grid-area: header;
-}
 .main-content {
   grid-area: content;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow-y: hidden;
   max-height: 100%;
+}
+
+@media (max-width: 450px) {
+  .main-container {
+    display: grid;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 60px;
+  
+    grid-template-areas: 
+      'content'
+      'menu'
+  }
+}
+
+@media (max-height: 900px) {
+  .main-container {
+    grid-template-rows: 1fr 60px;
+  }
+}
+
+@media (max-height: 736px) {
+  .main-container {
+    grid-template-rows: 1fr 50px;
+  }
+}
+
+@media (max-height: 667px) {
+  .main-container {
+    grid-template-rows: 1fr 45px;
+  }
+}
+
+@media (max-height: 568px) {
+  .main-container {
+    grid-template-rows: 1fr 40px;
+  }
 }

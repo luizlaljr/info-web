@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { handleOperationality } from '../../../../utils/utils'
+
 import './info.css'
 
 function Info({ user }) {
@@ -8,7 +10,9 @@ function Info({ user }) {
       <div className="name">
         {user?.post} {user?.name}
       </div>
-      <div className="operationality">{user?.operationality}</div>
+      <div className="operationality">
+        {handleOperationality(user?.activity, user?.operationality)}
+      </div>
     </>
   )
 }

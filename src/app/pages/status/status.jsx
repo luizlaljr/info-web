@@ -8,10 +8,18 @@ import Info from './components/info/info'
 import Main from '../../templates/main/main'
 
 function Status() {
-  const { totalizerUser } = useAuth()
+  const { signOut, totalizerUser } = useAuth()
+
+  const handleLogout = () => {
+    signOut()
+  }
+
   return (
     <Main>
       <div className="status-container">
+        <button type="button" onClick={handleLogout} className="button-menu">
+          <i className="fas fa-sign-out-alt" />
+        </button>
         <div className="status-project">
           <Project user={totalizerUser} />
         </div>
