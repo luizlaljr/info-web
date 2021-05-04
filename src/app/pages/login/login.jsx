@@ -25,7 +25,6 @@ const Login = () => {
 
   return (
     <div className="login-container">
-      cruzrc 3512118
       <img src={Logo} alt="" />
       <h1>1°/2°GT</h1>
       <form onSubmit={handleSubmit}>
