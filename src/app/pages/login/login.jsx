@@ -46,6 +46,7 @@ const Login = () => {
           <input
             type="password"
             className="input-password"
+            inputMode="numeric"
             value={userPassword}
             onChange={(e) => {
               setUserPassword(e.target.value)
