@@ -58,6 +58,7 @@ const AuthProvider = ({ children }) => {
       setUser(userData)
 
       fetchTotalizerAuth(userData)
+      fetchReportsAuth(userData)
     } catch (e) {
       // hasError(true)
     } finally {
