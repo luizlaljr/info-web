@@ -21,9 +21,13 @@ function Missions() {
         <button type="button" onClick={handleLogout} className="button-menu">
           <i className="fas fa-sign-out-alt" />
         </button>
-        {reportsUser?.map((report) => (
-          <Mission key={report.id} mission={report} />
-        ))}
+        {reportsUser.length < 1 ? (
+          <div className="no_missions">Não há missões!</div>
+        ) : (
+          reportsUser?.map((report) => (
+            <Mission key={report.id} mission={report} />
+          ))
+        )}
       </div>
     </Main>
   )
