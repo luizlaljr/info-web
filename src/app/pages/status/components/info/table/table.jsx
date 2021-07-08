@@ -14,7 +14,7 @@ function Table({ user }) {
     <div className="table">
       <div className="table-row">
         <div className="table-column title-column">Situação:</div>
-        <div className="table-column">{handleCondition(user?.name)}</div>
+        <div className="table-column">{handleCondition(user?.condition)}</div>
       </div>
       <div className="table-row">
         <div className="table-column title-column">Data Início:</div>
