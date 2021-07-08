@@ -1,6 +1,4 @@
 const handleCondition = (condition) => {
-  if (!condition) return '-'
-
   return condition ? 'Comissionado' : 'Diária'
 }
 
