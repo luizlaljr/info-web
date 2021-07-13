@@ -1,6 +1,4 @@
-const handleCondition = (condition) => {
-  return condition ? 'Comissionado' : 'Diária'
-}
+const handleCondition = (condition) => condition ? 'Comissionado' : 'Diária'
 
 const handleModulus = (condition, modulus) => {
   if (condition == null) return '-'
