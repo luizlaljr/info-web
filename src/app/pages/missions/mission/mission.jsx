@@ -28,7 +28,9 @@ function Mission({ mission }) {
         <div className="data">
           <div className="data-row">
             <Date date={{ start: mission.start, color }} />
-            <Amount amount={{ amount: mission.amount, color }} />
+            <Amount
+              amount={{ amount: mission.amount, color, link: mission.link }}
+            />
           </div>
           <div className="data-row">
             <Locale locale={{ locale: mission.locale, color }} />
