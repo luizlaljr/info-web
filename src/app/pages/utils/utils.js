@@ -23,7 +23,7 @@ const handleDate = (date) => {
     year: 'numeric',
     month: '2-digit',
     day: '2-digit',
-  }).format(new Date(date))
+  }).format(new Date(`${date}T03:00:00Z`))
 
   return formattedDate
 }
