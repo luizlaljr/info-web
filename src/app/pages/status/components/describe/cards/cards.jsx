@@ -20,6 +20,7 @@ function Cards({ user }) {
           gradient="to right"
           colorsGradient={handleGradient(report?.link)}
           amount={report?.amount.toFixed(1)}
+          prevision={report.link === 'C' ? `/${user.prevision}` : ''}
           income={handleIncome(report?.income)}
         />
       ))}

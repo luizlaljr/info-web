@@ -2,7 +2,7 @@ import React from 'react'
 
 import './card.css'
 
-function Card({ title, gradient, colorsGradient, amount, income }) {
+function Card({ title, gradient, colorsGradient, amount, prevision, income }) {
   return (
     <div
       className="card"
@@ -15,6 +15,7 @@ function Card({ title, gradient, colorsGradient, amount, income }) {
         <div className="card-amount">
           Qtd:
           {amount}
+          {prevision}
         </div>
         <div className="card-income">
           Valor:
