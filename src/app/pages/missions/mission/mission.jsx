@@ -35,7 +35,7 @@ function Mission({ mission }) {
           <div className="data-row">
             <Locale locale={{ locale: mission.locale, color }} />
             <Transport transport={{ transport: mission.transport, color }} />
-            <Income income={mission.income} />
+            <Income income={{income: mission.income, wage: mission.wage, amount: mission.amount, link: mission.link}} />
           </div>
         </div>
       </div>

@@ -3,9 +3,14 @@ import React from 'react'
 import { handleIncome } from '../../../../utils/utils'
 
 function Income({ income }) {
+
+  const optionIncome = () => {
+    return income.link == 'G' ? income.amount * income.wage / 100 : income.income
+  }
+
   return (
     <div className="mission-income">
-      <span>{handleIncome(income)}</span>
+      <span>{handleIncome(optionIncome())}</span>
     </div>
   )
 }
