@@ -5,7 +5,8 @@ import { handleIncome } from '../../../../utils/utils'
 function Income({ income }) {
 
   const optionIncome = () => {
-    return income.link == 'G' ? income.amount * income.wage / 100 : income.income
+    return income.link == 'G'
+    ? (income.amount * income.wage) / 100 : income.income
   }
 
   return (
